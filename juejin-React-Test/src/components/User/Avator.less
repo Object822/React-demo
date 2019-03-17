@@ -1,0 +1,44 @@
+.avator {
+    display: flex;
+    height: 85px;
+    padding: 8px 0 10px 0;
+    background: #F4F6F9;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    &>div {
+        width: 0;
+        background-color: #fff;
+    }
+    &>.avator__logo {
+        background:#fff url("../../../psd/miniImg/avator.png") no-repeat 15px 15px;
+        flex-grow: 1;
+    }
+    &>.avator__introduction {
+        flex-grow: 2;
+        display: flex;
+        flex-direction: column;
+        &>div {
+            display: flex;
+            margin-left: 20px;
+        }
+        .avator__introduction--name {
+            flex-grow: 2;
+            align-items: flex-end;
+            padding-bottom: 15px;
+            font-weight: 700;
+        }
+        .avator__introduction--occupation {
+            flex-grow: 1;
+            align-items: flex-start;
+        }
+    }
+    &>.avator__detail {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 20px;
+        color: #999;
+    }
+}
